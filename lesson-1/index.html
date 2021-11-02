@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <img
+          class="navigation__logo"
+          src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80"
+          alt=""
+        />
+        <div class="navigation__links">
+          <a
+            class="navigation__links__link"
+            href="https://ioanageorgia.github.io/lesson4/"
+          >
+            Partner Shop 1
+          </a>
+          <a class="navigation__links__link" href=""> Partner Shop 2 </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="login__wrapper">
+        <div class="login">
+          <div class="login__header">
+            <h1>Login</h1>
+          </div>
+          <input class="login__user" type="text" placeholder="Username" />
+          <input class="login__pass" type="password" placeholder="Password" />
+        </div>
+        <div class="login__signes">
+          <div>
+            <input type="checkbox" name="" id=check"" />
+            <label for="check">Remember Me</label>
+          </div>
+          <button class="login__signes__btn">Sign In</button>
+        </div>
+        <div class="login__social">
+          <a href="#" class="fa fa-facebook">Sign in with Facebook</a>
+          <a href="#" class="fa fa-google">Sign in with Google</a>
+        </div>
+      </div>
+
+      <div class="iframe">
+        <div class="iframe__calender">
+          <h3>Events</h3>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=ag500407.muzaffer%40gmail.com&ctz=Europe%2FIstanbul"
+            style="border: 0"
+            width="300"
+            height="200"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <br />
+        <div class="iframe__youtube">
+          <h3>Video</h3>
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

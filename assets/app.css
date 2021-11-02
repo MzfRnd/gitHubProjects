@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+.main__cv {
+  padding: 15px;
+  margin: 20px 20px 50px;
+  border: 1px solid gray;
+  width: 48%;
+  float: left;
+}
+
+.main__cv__header {
+  border: 1px solid #013a63;
+  background-color: #013a63;
+  padding: 15px;
+  margin: 20px 20px 50px;
+  width: 97%;
+  align-items: center;
+}
+
+.cv__title__name {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+.cv__title__sub {
+  text-align: center;
+  color: white;
+}
+.cv__title__obj {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.main__sidebar {
+  border: 1px solid #bee1e6;
+  background-color: #bee1e6;
+  color: #277da1;
+}
+
+.main__sidebar__img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  max-height: 150px;
+}
+
+.main__content__bigtitle {
+  border: 1px solid #bee1e6;
+  background-color: #bee1e6;
+  color: #277da1;
+  padding: 15px;
+}
+
+.main__content__title {
+  border: 1px solid #adb5bd;
+  background-color: #adb5bd;
+  color: #f1dca7;
+  max-width: 550px;
+  padding: 15px;
+}
+
+.main__content__experience {
+  color: #277da1;
+  padding: 15px;
+  background-color: white;
+}
+.main__content__list {
+  margin-bottom: 10px;
+}
+
+.main__content__uni {
+  color: #277da1;
+  margin-left: 40px;
+}
+
+.main__tasks {
+  padding: 15px;
+  margin: 20px 0px 50px;
+  border: 1px solid gray;
+  width: 48%;
+  float: left;
+  height: 1813px;
+}
+
+.main__tasks__list {
+  text-decoration: none;
+}
