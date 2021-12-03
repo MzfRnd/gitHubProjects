@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Avenir Next;
+  src: url(../AvenirNextLTPro-Regular.otf);
+}
+body {
+  font-family: Avenir Next;
+  width: 1440px;
+  height: 817px;
+  background-color: #11364e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body div {
+  width: 370px;
+  height: 450px;
+  background-color: #11364e;
+  display: flex;
+  flex-direction: column;
+}
+body div h1 {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: white;
+  border-bottom: 30px;
+}
+body div .fonts {
+  border: none;
+  width: 370px;
+  display: block;
+  background-color: #11364e;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+body div .border-bottom {
+  border: none;
+  width: 370px;
+  display: block;
+  background-color: #11364e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 40px;
+}
+body div .btn {
+  width: 370px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #ff7f57;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
