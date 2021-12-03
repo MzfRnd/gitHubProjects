@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Red Hat Display;
+  font-style: normal;
+}
+main {
+  background-image: url(../images/pattern-background-desktop.svg);
+  width: 1440px;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .container {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    &__img {
+      width: 400px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    & .explain {
+      margin: 20px 50px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        margin-bottom: 10px;
+        align-self: center;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 30px;
+        color: hsl(223, 47%, 23%);
+      }
+      &__more {
+        margin-bottom: 10px;
+        text-align: center;
+        align-self: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: hsl(224, 23%, 55%);
+      }
+    }
+    & .price {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 100px;
+      margin: 0 50px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 25px;
+      &__music {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+      }
+      &__description {
+        position: absolute;
+        top: 30px;
+        left: 85px;
+        h2 {
+          font-weight: 900;
+          font-size: 15px;
+          line-height: 15px;
+          color: hsl(223, 47%, 23%);
+          margin-bottom: 7px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: hsl(224, 23%, 55%);
+        }
+      }
+      &__btn {
+        position: absolute;
+        right: 20px;
+        align-self: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: hsl(245, 75%, 52%);
+      }
+    }
+  }
+  & .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__proceed {
+      width: 300px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      border: none;
+      box-shadow: 0 20px hsl(225, 100%, 98%);
+    }
+    &__cancel {
+      margin-top: 30px;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 12px;
+      color: hsl(224, 23%, 55%);
+    }
+  }
+}
