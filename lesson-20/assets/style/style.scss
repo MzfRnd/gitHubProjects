@@ -1,0 +1,144 @@
+body {
+  color: #242635;
+}
+
+// Header
+
+.font-poppins {
+  font-family: Poppins;
+}
+.font-source {
+  font-family: Source Sans Pro;
+}
+
+.head-container {
+  display: flex;
+  margin-top: 62px;
+  .links {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    &__head {
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.25px;
+    }
+    &__elements {
+      display: flex;
+      justify-content: flex-start;
+      width: 267px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__element {
+      text-decoration: none;
+      margin-right: 30px;
+    }
+    .checkbox-label .checkbox-custom {
+      opacity: 0;
+    }
+  }
+}
+
+.main-container {
+  margin-top: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 102px;
+    letter-spacing: -2px;
+  }
+  &__description {
+    margin: 30px 0 47px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    width: 588px;
+  }
+  &__img {
+    width: 843px;
+    height: 328px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 768px;
+    height: 1024px;
+  }
+  .head-container {
+    margin-top: 34px;
+    .links {
+      width: 768px;
+      &__elements {
+        line-height: 22.4px;
+      }
+    }
+  }
+  .main-container {
+    margin-top: 226px;
+    &__title {
+      font-size: 72px;
+      line-height: 83px;
+      letter-spacing: -1.6px;
+    }
+    &__description {
+      margin: 22px 0 45px 0;
+    }
+    &__img {
+      width: 617px;
+      height: 512px;
+      content: url(../images/Image-tablet.png);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 320px;
+    height: 568px;
+  }
+  .head-container {
+    // margin-left: 12%;
+    margin-top: 11px;
+
+    .links {
+      width: 320px;
+      &__elements {
+        display: none;
+      }
+      .checkbox-label .checkbox-custom {
+        opacity: 1;
+      }
+    }
+  }
+  .main-container {
+    // margin-left: 12%;
+    margin-top: 64px;
+    &__title {
+      font-size: 36px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.8px;
+    }
+    &__description {
+      font-size: 12px;
+      line-height: 18px;
+      width: 217px;
+      margin: 27px 0 57px 0;
+    }
+    &__img {
+      width: 256px;
+      height: 284px;
+      content: url(../images/Image-phone.png);
+    }
+  }
+}

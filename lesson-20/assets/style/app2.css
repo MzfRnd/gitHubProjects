@@ -1,0 +1,50 @@
+input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* unchecked */
+.checkbox-label .checkbox-custom {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  right: 20px;
+  visibility: hidden;
+  /* background-color: yellow; */
+}
+
+.checkbox-label .checkbox-custom .burger {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  visibility: visible;
+}
+.checkbox-label .checkbox-custom a {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.checkbox-label .checkbox-custom .close {
+  visibility: hidden;
+}
+
+/* checked */
+
+.checkbox-label input:checked ~ .checkbox-custom .burger {
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom .close {
+  visibility: visible;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  width: 50px;
+  height: 200px;
+  visibility: visible;
+}
