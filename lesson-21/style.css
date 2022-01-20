@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  max-width: 1100px;
+}
+
+.playingCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red {
+  color: red;
+}
+
+.cards {
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px 0 0 20px;
+  width: 63px;
+  height: 88px;
+}
+.cards img {
+  position: absolute;
+  width: 63px;
+  height: 88px;
+  border-radius: 5px;
+}
+.cards .outline {
+  max-width: 63px;
+  max-height: 88px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.cards .outline span {
+  font-size: 16px;
+}
+.cards .outline h1 {
+  margin-left: 23px;
+  font-size: 22px;
+}
+.cards .outline .top {
+  padding-left: 2px;
+}
+.cards .outline .bottom {
+  padding-left: 44px;
+}
+.cards .outline .ten {
+  padding-left: 38px;
+}
+.cards .outline .queen {
+  padding-left: 40;
+}
+.cards:hover {
+  border: 1px solid black;
+}
+.cards:hover .outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.cards:hover img {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
