@@ -7,9 +7,51 @@ let factorial = () => {
   return factNum;
 };
 
-// 2)not sure how to do
+// 2)
+let largestCommonDivisor = () => {
+  const stringNum = prompt("please write two numbers devided with comma");
+  const numArray = stringNum.split(",");
+  const firstNum = parseInt(numArray[0]);
+  const secondNum = parseInt(numArray[1]);
+  const firstNumArray = [];
+  const secondNumArray = [];
+  const commonDivisors = [];
+  let ind;
+  for (let i = 1; i <= firstNum; i++) {
+    const num = firstNum / i;
+    if (Number.isInteger(num) == true) {
+      firstNumArray.push(num);
+    }
+  }
+  for (let j = 1; j <= secondNum; j++) {
+    const num2 = secondNum / j;
+    if (Number.isInteger(num2) == true) {
+      secondNumArray.push(num2);
+    }
+  }
+  for (let k = 0; k < firstNumArray.length; k++) {
+    if (firstNumArray.includes(secondNumArray[k])) {
+      ind = secondNumArray[k];
+      commonDivisors.push(ind);
+    }
+  }
+  console.log(firstNumArray);
+  console.log(secondNumArray);
+  console.log(commonDivisors);
+  return commonDivisors[0];
+};
 
-// 3)not sure how to do
+// 3)
+let divisors = () => {
+  const userNumberString = prompt("Please give us a number");
+  const n = parseInt(userNumberString);
+  for (var i = 1; i < n; i++) {
+    const dev = n / i;
+    if (Number.isInteger(dev) == true) {
+      console.log(dev);
+    }
+  }
+};
 
 // 4)
 let digitFinder = () => {
