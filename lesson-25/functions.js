@@ -31,7 +31,63 @@ let areaCalculator = (x, y) => {
   }
 };
 
-// not sure about 5 and 6
+// 5)
+let isPerfect = (numInt) => {
+  // const stringNum = prompt("please write a number");
+  // const numInt = parseInt(stringNum);
+  const numArray = [];
+  let sum;
+  for (let i = 2; i <= numInt; i++) {
+    const num = numInt / i;
+    if (Number.isInteger(num) == true) {
+      numArray.push(num);
+    }
+  }
+  const reducer = (previousValue, currentValue) => previousValue + currentValue;
+  if (numArray.length > 0) {
+    sum = numArray.reduce(reducer);
+  }
+  // console.log(numArray);
+  if (numInt == sum) {
+    // console.log(`${numInt} is a perfect number`);
+    return numInt;
+  } else {
+    // console.log(`${numInt} is not a perfect number`);
+    return false;
+  }
+};
+
+// 6)
+let listPerfectNumbers = () => {
+  const range = prompt("Please write min and max values seperated with comma");
+  const numArray = range.split(",");
+  let minRange;
+  let maxRange;
+  const perfectList = [];
+  if (parseInt(numArray[0]) > parseInt(numArray[1])) {
+    minRange = parseInt(numArray[1]);
+    maxRange = parseInt(numArray[0]);
+  } else if (parseInt(numArray[0]) < parseInt(numArray[1])) {
+    minRange = parseInt(numArray[0]);
+    maxRange = parseInt(numArray[1]);
+  } else if (parseInt(numArray[0]) == parseInt(numArray[1])) {
+    if (isPerfect(numArray[0])) {
+      console.log(
+        `max and min ranges are the same and ${numArray[0]} is a perfect number`
+      );
+    } else {
+      console.log(
+        `max and min ranges are the same and ${numArray[0]} is not a perfect number`
+      );
+    }
+  }
+  for (i = minRange; i <= maxRange; i++) {
+    if (isPerfect(i)) {
+      perfectList.push(i);
+    }
+  }
+  console.log(perfectList);
+};
 
 // 7)
 let showTime = (hh, mm, ss) => {
