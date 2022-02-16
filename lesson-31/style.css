@@ -1,0 +1,123 @@
+body {
+  background-color: rgba(116, 115, 115, 0.267);
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: rgb(226, 226, 226);
+  margin-top: 20px;
+  border: 2px solid rgba(148, 148, 148, 0.267);
+  display: flex;
+  width: 1000px;
+  height: 500px;
+}
+
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+}
+
+.inputDiv {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+#btn {
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  align-self: center;
+  background-color: rgb(245, 248, 32);
+  border: 1px solid rgb(255, 238, 0);
+  border-radius: 5px;
+}
+
+#breed {
+  align-self: center;
+  width: 80%;
+  height: 30px;
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+}
+.catDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(184, 184, 184, 0.267);
+  border: 2px solid rgba(148, 148, 148, 0.267);
+  border-radius: 50px;
+  margin: 10px 0 10px 50px;
+  width: 500px;
+  padding-bottom: 20px;
+}
+
+.catDiv > * {
+  margin: 10px;
+}
+
+.favDiv {
+  width: 300px;
+  height: 50px;
+  align-self: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+  margin-top: 30px;
+  /* margin-left: 50px; */
+}
+
+.addFav {
+  border: 1px solid rgba(12, 149, 8, 0.931);
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 130px;
+  height: 25px;
+  display: inline;
+  background-color: rgba(16, 211, 9, 0.698);
+}
+
+#favList {
+  margin-top: 20px;
+  width: 300px;
+  height: 80%;
+}
+
+.favTitle {
+  font-size: 20px;
+}
+.favItemDiv {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  align-items: center;
+  display: flex;
+}
+.deleteButton {
+  margin-right: 5px;
+  font-size: 11px;
+  text-align: center;
+  background-color: red;
+  /* color: white; */
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+.hide {
+  visibility: hidden;
+}
+.favWrapper {
+  padding-top: 20px;
+  border: 2px solid rgba(148, 148, 148, 0.267);
+  height: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
