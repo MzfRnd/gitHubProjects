@@ -1,5 +1,3 @@
-
-
 let map;
 
 function initMap() {
@@ -8,7 +6,6 @@ function initMap() {
     zoom: 4,
   });
 
- 
   const icons = {
     muzaffer: {
       icon: "./avatars/muzaffer.png",
@@ -68,11 +65,11 @@ function initMap() {
   ];
 
   // Create markers.
-  for (let i = 0; i < features.length; i++) {
+  features.forEach((element) => {
     const marker = new google.maps.Marker({
-      position: features[i].position,
-      icon: icons[features[i].type].icon,
+      position: element.position,
+      icon: icons[element.type].icon,
       map: map,
     });
-  }
+  });
 }
