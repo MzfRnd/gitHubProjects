@@ -1,38 +1,4 @@
-// let map;
 
-// function initMap() {
-//   map = new google.maps.Map(document.getElementById("map"), {
-//     center: new google.maps.LatLng(52.19343273416053, 20.899325058038187),
-//     zoom: 16,
-//   });
-
-//   // const iconBase = "./avatars";
-//   const icons = {
-//     muzaffer: {
-//       icon: "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png",
-//     },
-//   };
-//   const features = [
-//     {
-//       position: new google.maps.LatLng(52.19343273416053, 20.899325058038187),
-//       type: "muzaffer",
-//     },
-//     {
-//       position: new google.maps.LatLng(59.22079022762899, 17.937983317114234),
-//       type: "info",
-//     },
-//   ];
-
-//   // Create markers.
-
-//   function addMarker(feature) {
-//     var marker = new google.maps.Marker({
-//       position: feature.position,
-//       icon: icons[feature.type].icon,
-//       map: map,
-//     });
-//   }
-// }
 
 let map;
 
@@ -42,8 +8,7 @@ function initMap() {
     zoom: 4,
   });
 
-  const iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+ 
   const icons = {
     muzaffer: {
       icon: "./avatars/muzaffer.png",
